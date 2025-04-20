@@ -1,21 +1,32 @@
 import { Outlet, NavLink } from 'react-router-dom';
-       import { useContext } from 'react';
+       import { useContext, useEffect, useRef } from 'react';
        import { ThemeContext } from '../context/ThemeContext';
 
        function Layout() {
          const { theme, toggleTheme } = useContext(ThemeContext);
+         const navbarRef = useRef(null);
 
          const closeNavbar = () => {
-           const navbarToggler = document.querySelector('.navbar-toggler');
            const navbarCollapse = document.querySelector('#navbarNav');
-           if (navbarToggler && navbarCollapse.classList.contains('show')) {
-             navbarToggler.click();
+           if (navbarCollapse?.classList.contains('show')) {
+             navbarCollapse.classList.remove('show');
            }
          };
 
+         useEffect(() => {
+           const handleOutsideClick = (event) => {
+             if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+               closeNavbar();
+             }
+           };
+
+           document.addEventListener('click', handleOutsideClick);
+           return () => document.removeEventListener('click', handleOutsideClick);
+         }, []);
+
          return (
            <div className="d-flex flex-column min-vh-100">
-             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main navigation">
+             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main navigation" ref={navbarRef}>
                <div className="container-fluid">
                  <NavLink className="navbar-brand" to="/" onClick={closeNavbar}>
                    My Portfolio

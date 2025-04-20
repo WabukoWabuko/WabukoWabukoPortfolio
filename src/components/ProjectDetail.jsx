@@ -2,6 +2,7 @@ import { useContext, lazy, Suspense } from 'react';
        import { useParams } from 'react-router-dom';
        import { ThemeContext } from '../context/ThemeContext';
        import { motion } from 'framer-motion';
+       import { LinkedInShareButton, TwitterShareButton } from 'react-share';
        import projectsData from '../data/projects.json';
 
        const ThreeDModel = lazy(() => import('../components/ThreeDModel'));
@@ -10,6 +11,7 @@ import { useContext, lazy, Suspense } from 'react';
          const { theme } = useContext(ThemeContext);
          const { id } = useParams();
          const project = projectsData.projects.find(p => p.id === parseInt(id));
+         const shareUrl = window.location.href;
 
          if (!project) {
            return <div className="container py-5">Project not found</div>;
@@ -35,12 +37,24 @@ import { useContext, lazy, Suspense } from 'react';
                    </Suspense>
                  )}
                  <div className="mt-3">
-                   <a href={project.github} className="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer">
+                   <a href={project.github} className="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`}>
                      GitHub
                    </a>
-                   <a href={project.demo} className="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+                   <a href={project.demo} className="btn btn-outline-primary" target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} demo`}>
                      Demo
                    </a>
+                 </div>
+                 <div className="mt-3 d-flex gap-2">
+                   <LinkedInShareButton url={shareUrl} title={project.title} summary={project.description}>
+                     <button className="btn btn-outline-primary" aria-label={`Share ${project.title} on LinkedIn`}>
+                       Share on LinkedIn
+                     </button>
+                   </LinkedInShareButton>
+                   <TwitterShareButton url={shareUrl} title={`${project.title} - Check out my portfolio project!`}>
+                     <button className="btn btn-outline-primary" aria-label={`Share ${project.title} on X`}>
+                       Share on X
+                     </button>
+                   </TwitterShareButton>
                  </div>
                </div>
              </div>

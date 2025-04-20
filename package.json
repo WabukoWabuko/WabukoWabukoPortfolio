@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite gh-pages"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
     "bootstrap": "5.3",
@@ -18,6 +20,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.1",
+    "react-share": "^5.2.2",
     "three": "^0.175.0",
     "vite-plugin-gh-pages": "^1.0.1"
   },

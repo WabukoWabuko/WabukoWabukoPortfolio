@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import ghPages from 'vite-plugin-gh-pages';
+       import react from '@vitejs/plugin-react';
+       import ViteGhPages from 'vite-plugin-gh-pages';
 
-export default defineConfig({
-  plugins: [react(), ghPages()],
-  base: '/https://github.com/WabukoWabuko/WabukoWabukoPortfolio.git/',
-});
+       export default defineConfig({
+         plugins: [react(), ViteGhPages],
+         base: '/WabukoWabukoPortfolio/'
+       });

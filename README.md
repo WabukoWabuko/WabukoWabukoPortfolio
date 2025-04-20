@@ -1,12 +1,62 @@
-# React + Vite
+ A modern, interactive portfolio showcasing my skills as a Computer Scientist specializing in React.js, built for global tech opportunities in 2025.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+ This portfolio demonstrates my expertise in front-end development through a responsive, accessible web application. It features dynamic project showcases, a 3D visualization using react-three-fiber, and a seamless user experience with Bootstrap and Framer Motion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ 🔗 **Live Demo**: [https://WabukoWabuko.github.io/WabukoWabukoPortfolio/](https://WabukoWabuko.github.io/WabukoWabukoPortfolio/)
 
-## Expanding the ESLint configuration
+ ## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ - **Responsive Design**: Built with Bootstrap for mobile, tablet, and desktop compatibility.
+ - **Interactive Projects**: Filterable project cards with detailed case studies and a 3D AI Model Viewer.
+ - **Animations**: Smooth fade-ins and hover effects using Framer Motion.
+ - **Accessibility**: WCAG 2.1 compliant with ARIA attributes and keyboard navigation.
+ - **Dark/Light Mode**: User-controlled theme toggle with persistent state.
+ - **Contact Form**: Direct messaging via EmailJS for recruiter engagement.
+ - **Social Sharing**: Share projects on LinkedIn and X to boost visibility.
+
+ ## Tech Stack
+
+ - **Frontend**: React.js, Bootstrap, Framer Motion, react-three-fiber, react-share
+ - **Build Tool**: Vite
+ - **Deployment**: GitHub Pages
+ - **Others**: EmailJS for contact form, react-router-dom for routing
+
+ ## Installation
+
+ To run locally:
+
+ ```bash
+ git clone https://github.com/WabukoWabuko/WabukoWabukoPortfolio.git
+ cd WabukoWabukoPortfolio
+ npm install
+ npm run dev
+ ```
+
+ Open `http://localhost:5173` in your browser.
+
+ ## Deployment
+
+ Deployed on GitHub Pages using `vite-plugin-gh-pages`:
+
+ ```bash
+ npm run build
+ npm run deploy
+ ```
+
+ ## Contact
+
+ Reach out via:
+ - [Portfolio Contact Form](https://WabukoWabuko.github.io/WabukoWabukoPortfolio/contact)
+ - [LinkedIn](https://www.linkedin.com/in/wabuko-wabuko-431669209/)
+ - [GitHub](https://github.com/WabukoWabuko)
+ - Email: your.email@example.com
+
+ ## License
+
+ © 2025 Wabukowabuko. All rights reserved.
+
+ ---
+
+ ⭐ If you find this project inspiring, please give it a star!

@@ -1,9 +1,18 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
        import { ThemeContext } from '../context/ThemeContext';
        import { motion } from 'framer-motion';
+       import ProjectCard from '../components/ProjectCard';
+       import projectsData from '../data/projects.json';
 
        function Projects() {
          const { theme } = useContext(ThemeContext);
+         const [filter, setFilter] = useState('All');
+
+         const uniqueTech = ['All', ...new Set(projectsData.projects.flatMap(project => project.tech))];
+         const filteredProjects = filter === 'All'
+           ? projectsData.projects
+           : projectsData.projects.filter(project => project.tech.includes(filter));
+
          return (
            <motion.div
              className={`container py-5 ${theme === 'dark' ? 'bg-dark text-light' : 'bg-light text-dark'}`}
@@ -12,33 +21,26 @@ import { useContext } from 'react';
              transition={{ duration: 0.5 }}
            >
              <h1 className="mb-4">My Projects</h1>
+             <div className="mb-4">
+               <div className="btn-group" role="group" aria-label="Project filters">
+                 {uniqueTech.map(tech => (
+                   <button
+                     key={tech}
+                     type="button"
+                     className={`btn ${filter === tech ? 'btn-primary' : 'btn-outline-primary'}`}
+                     onClick={() => setFilter(tech)}
+                   >
+                     {tech}
+                   </button>
+                 ))}
+               </div>
+             </div>
              <div className="row row-cols-1 row-cols-md-2 g-4">
-               <div className="col">
-                 <motion.div
-                   className="card h-100"
-                   whileHover={{ scale: 1.05 }}
-                   transition={{ duration: 0.3 }}
-                 >
-                   <img src="/images/task-manager.png" className="card-img-top" alt="Task Manager" />
-                   <div className="card-body">
-                     <h5 className="card-title">Task Manager App</h5>
-                     <p className="card-text">Placeholder for Task Manager project.</p>
-                   </div>
-                 </motion.div>
-               </div>
-               <div className="col">
-                 <motion.div
-                   className="card h-100"
-                   whileHover={{ scale: 1.05 }}
-                   transition={{ duration: 0.3 }}
-                 >
-                   <img src="/images/dashboard.png" className="card-img-top" alt="Dashboard" />
-                   <div className="card-body">
-                     <h5 className="card-title">Data Visualization Dashboard</h5>
-                     <p className="card-text">Placeholder for Dashboard project.</p>
-                   </div>
-                 </motion.div>
-               </div>
+               {filteredProjects.map((project, index) => (
+                 <div className="col" key={project.id}>
+                   <ProjectCard project={project} />
+                 </div>
+               ))}
              </div>
            </motion.div>
          );

@@ -1,6 +1,7 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect, useRef } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
@@ -8,6 +9,7 @@ function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
   const [errors, setErrors] = useState({});
+  const toastRef = useRef(null);
 
   const validateForm = () => {
     const newErrors = {};
@@ -33,15 +35,24 @@ function Contact() {
       )
       .then(
         () => {
-          setStatus('Message sent successfully!');
+          setStatus('success');
           setFormData({ name: '', email: '', message: '' });
           setErrors({});
         },
         () => {
-          setStatus('Failed to send message. Please try again.');
+          setStatus('error');
         }
       );
   };
+
+  useEffect(() => {
+    if (status && toastRef.current) {
+      const toast = new window.bootstrap.Toast(toastRef.current);
+      toast.show();
+      const timer = setTimeout(() => setStatus(''), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
 
   return (
     <motion.div
@@ -98,16 +109,64 @@ function Contact() {
               <div id="messageHelp" className="form-text">Describe your inquiry or opportunity.</div>
             </div>
             <button type="submit" className="btn btn-primary">Send Message</button>
-            {status && (
-              <p className={`mt-3 ${status.includes('success') ? 'text-success' : 'text-danger'}`}>
-                {status}
-              </p>
-            )}
           </form>
+          <div className="toast-container position-fixed bottom-0 end-0 p-3">
+            {status && (
+              <div
+                ref={toastRef}
+                className={`toast ${status === 'success' ? 'bg-success' : 'bg-danger'} text-white`}
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div className="toast-header">
+                  <strong className="me-auto">{status === 'success' ? 'Success' : 'Error'}</strong>
+                  <button
+                    type="button"
+                    className="btn-close btn-close-white"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="toast-body">
+                  {status === 'success'
+                    ? 'Message sent successfully!'
+                    : 'Failed to send message. Please try again.'}
+                </div>
+              </div>
+            )}
+          </div>
           <div className="d-flex justify-content-center gap-3 mt-3">
-            <motion.a href="https://github.com/yourusername" className="btn btn-outline-primary" whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }} target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</motion.a>
-            <motion.a href="https://linkedin.com/in/yourusername" className="btn btn-outline-primary" whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }} target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">LinkedIn</motion.a>
-            <motion.a href="/resume.pdf" className="btn btn-outline-primary" whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }} download aria-label="Download my resume">Resume</motion.a>
+            <motion.a
+              href="https://github.com/yourusername"
+              className="btn btn-outline-primary"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit my GitHub profile"
+            >
+              GitHub
+            </motion.a>
+            <motion.a
+              href="https://linkedin.com/in/yourusername"
+              className="btn btn-outline-primary"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit my LinkedIn profile"
+            >
+              LinkedIn
+            </motion.a>
+            <motion.div
+              className="btn btn-outline-primary"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+              aria-label="View resume"
+            >
+              <Link to="/resume">Resume</Link>
+            </motion.div>
           </div>
         </div>
       </div>

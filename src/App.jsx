@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 import ProjectDetail from './pages/ProjectDetail';
 import { ThemeProvider } from './context/ThemeContext';
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="projects/:id" element={<ProjectDetail />} />
             <Route path="skills" element={<Skills />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="resume" element={<Resume />} />
           </Route>
         </Routes>
       </BrowserRouter>

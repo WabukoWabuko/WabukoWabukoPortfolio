@@ -8,7 +8,7 @@ import { Outlet, NavLink } from 'react-router-dom';
          return (
            <div className="d-flex flex-column min-vh-100">
              {/* Navbar */}
-             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main navigation">
                <div className="container-fluid">
                  <NavLink className="navbar-brand" to="/">My Portfolio</NavLink>
                  <button
@@ -25,25 +25,25 @@ import { Outlet, NavLink } from 'react-router-dom';
                  <div className="collapse navbar-collapse" id="navbarNav">
                    <ul className="navbar-nav ms-auto">
                      <li className="nav-item">
-                       <NavLink className="nav-link" activeClassName="active" to="/" end>Home</NavLink>
+                       <NavLink className="nav-link" activeClassName="active" to="/" end aria-label="Home page">Home</NavLink>
                      </li>
                      <li className="nav-item">
-                       <NavLink className="nav-link" activeClassName="active" to="/about">About</NavLink>
+                       <NavLink className="nav-link" activeClassName="active" to="/about" aria-label="About page">About</NavLink>
                      </li>
                      <li className="nav-item">
-                       <NavLink className="nav-link" activeClassName="active" to="/projects">Projects</NavLink>
+                       <NavLink className="nav-link" activeClassName="active" to="/projects" aria-label="Projects page">Projects</NavLink>
                      </li>
                      <li className="nav-item">
-                       <NavLink className="nav-link" activeClassName="active" to="/skills">Skills</NavLink>
+                       <NavLink className="nav-link" activeClassName="active" to="/skills" aria-label="Skills page">Skills</NavLink>
                      </li>
                      <li className="nav-item">
-                       <NavLink className="nav-link" activeClassName="active" to="/contact">Contact</NavLink>
+                       <NavLink className="nav-link" activeClassName="active" to="/contact" aria-label="Contact page">Contact</NavLink>
                      </li>
                      <li className="nav-item">
                        <button
                          className="btn btn-outline-light ms-2"
                          onClick={toggleTheme}
-                         aria-label="Toggle theme"
+                         aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
                        >
                          {theme === 'dark' ? '☀️' : '🌙'}
                        </button>
@@ -54,13 +54,13 @@ import { Outlet, NavLink } from 'react-router-dom';
              </nav>
 
              {/* Main Content */}
-             <main className="flex-grow-1">
+             <main className="flex-grow-1" role="main">
                <Outlet />
              </main>
 
              {/* Footer */}
              <footer className="bg-dark text-light text-center py-3">
-               <p>&copy; 2025 WabukoWabuko. All rights reserved.</p>
+               <p>© 2025 [Your Name]. All rights reserved.</p>
              </footer>
            </div>
          );

@@ -22,20 +22,21 @@ import { useContext, useState } from 'react';
            >
              <h1 className="mb-4">My Projects</h1>
              <div className="mb-4">
-               <div className="btn-group" role="group" aria-label="Project filters">
+               <div className="btn-group" role="group" aria-label="Project filter buttons">
                  {uniqueTech.map(tech => (
                    <button
                      key={tech}
                      type="button"
                      className={`btn ${filter === tech ? 'btn-primary' : 'btn-outline-primary'}`}
                      onClick={() => setFilter(tech)}
+                     aria-pressed={filter === tech}
                    >
                      {tech}
                    </button>
                  ))}
                </div>
              </div>
-             <div className="row row-cols-1 row-cols-md-2 g-4">
+             <div className="row row-cols-1 row-cols-md-2 g-4" role="region" aria-label="Project cards">
                {filteredProjects.map((project, index) => (
                  <div className="col" key={project.id}>
                    <ProjectCard project={project} />

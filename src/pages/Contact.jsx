@@ -7,20 +7,35 @@ import { useContext, useState } from 'react';
          const { theme } = useContext(ThemeContext);
          const [formData, setFormData] = useState({ name: '', email: '', message: '' });
          const [status, setStatus] = useState('');
+         const [errors, setErrors] = useState({});
+
+         const validateForm = () => {
+           const newErrors = {};
+           if (!formData.name.trim()) newErrors.name = 'Name is required';
+           if (!formData.email.match(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
+             newErrors.email = 'Valid email is required';
+           }
+           if (!formData.message.trim()) newErrors.message = 'Message is required';
+           setErrors(newErrors);
+           return Object.keys(newErrors).length === 0;
+         };
 
          const sendEmail = (e) => {
            e.preventDefault();
+           if (!validateForm()) return;
+
            emailjs
              .send(
-               'service_keh3eya', // Replace with your EmailJS service ID
-               'your_template_id', // Replace with your EmailJS template ID
+               import.meta.env.VITE_EMAILJS_SERVICE_ID,
+               import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                formData,
-               'your_public_key' // Replace with your EmailJS public key
+               import.meta.env.VITE_EMAILJS_PUBLIC_KEY
              )
              .then(
                () => {
                  setStatus('Message sent successfully!');
                  setFormData({ name: '', email: '', message: '' });
+                 setErrors({});
                },
                () => {
                  setStatus('Failed to send message. Please try again.');
@@ -44,39 +59,42 @@ import { useContext, useState } from 'react';
                      <label htmlFor="name" className="form-label">Name</label>
                      <input
                        type="text"
-                       className="form-control"
+                       className={`form-control ${errors.name ? 'is-invalid' : ''}`}
                        id="name"
+                       name="name"
                        value={formData.name}
                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                       required
                        aria-describedby="nameHelp"
                      />
+                     {errors.name && <div className="invalid-feedback">{errors.name}</div>}
                      <div id="nameHelp" className="form-text">Enter your full name.</div>
                    </div>
                    <div className="mb-3">
                      <label htmlFor="email" className="form-label">Email</label>
                      <input
                        type="email"
-                       className="form-control"
+                       className={`form-control ${errors.email ? 'is-invalid' : ''}`}
                        id="email"
+                       name="email"
                        value={formData.email}
                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                       required
                        aria-describedby="emailHelp"
                      />
+                     {errors.email && <div className="invalid-feedback">{errors.email}</div>}
                      <div id="emailHelp" className="form-text">Enter a valid email address.</div>
                    </div>
                    <div className="mb-3">
                      <label htmlFor="message" className="form-label">Message</label>
                      <textarea
-                       className="form-control"
+                       className={`form-control ${errors.message ? 'is-invalid' : ''}`}
                        id="message"
+                       name="message"
                        rows="4"
                        value={formData.message}
                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                       required
                        aria-describedby="messageHelp"
                      ></textarea>
+                     {errors.message && <div className="invalid-feedback">{errors.message}</div>}
                      <div id="messageHelp" className="form-text">Describe your inquiry or opportunity.</div>
                    </div>
                    <button type="submit" className="btn btn-primary">Send Message</button>

@@ -16,5 +16,108 @@
     "title": "Bootstrap",
     "description": "Responsive styling framework.",
     "image": "/images/bootstrap.svg"
+  },
+  {
+    "id": 4,
+    "title": "Node.js",
+    "description": "Backend runtime for scalable server apps.",
+    "image": "/images/nodejs.svg"
+  },
+  {
+    "id": 5,
+    "title": "Python",
+    "description": "Powerful scripting for automation and data science.",
+    "image": "/images/python.svg"
+  },
+  {
+    "id": 6,
+    "title": "MongoDB",
+    "description": "NoSQL database for flexible document storage.",
+    "image": "/images/mongodb.svg"
+  },
+  {
+    "id": 7,
+    "title": "Docker",
+    "description": "Containerize apps for consistent deployment.",
+    "image": "/images/docker.svg"
+  },
+  {
+    "id": 8,
+    "title": "Tailwind CSS",
+    "description": "Utility-first CSS framework for fast styling.",
+    "image": "/images/tailwind.svg"
+  },
+  {
+    "id": 9,
+    "title": "Next.js",
+    "description": "React framework with SSR and API routes.",
+    "image": "/images/nextjs.svg"
+  },
+  {
+    "id": 10,
+    "title": "MySQL",
+    "description": "Relational database management system.",
+    "image": "/images/mysql.svg"
+  },
+  {
+    "id": 11,
+    "title": "Git & GitHub",
+    "description": "Version control and collaboration on codebases.",
+    "image": "/images/git.svg"
+  },
+  {
+    "id": 12,
+    "title": "Problem Solving",
+    "description": "Critical thinking and breaking down challenges logically.",
+    "image": "/images/problem-solving.svg"
+  },
+  {
+    "id": 13,
+    "title": "Communication",
+    "description": "Clear and effective communication in teams and with clients.",
+    "image": "/images/communication.svg"
+  },
+  {
+    "id": 14,
+    "title": "Figma",
+    "description": "UI/UX design and prototyping for web/mobile apps.",
+    "image": "/images/figma.svg"
+  },
+  {
+    "id": 15,
+    "title": "Linux",
+    "description": "Command-line and server environment mastery.",
+    "image": "/images/linux.svg"
+  },
+  {
+    "id": 16,
+    "title": "PostgreSQL",
+    "description": "Advanced open-source relational database system.",
+    "image": "/images/postgresql.svg"
+  },
+  {
+    "id": 17,
+    "title": "TypeScript",
+    "description": "Typed superset of JavaScript for more scalable apps.",
+    "image": "/images/typescript.svg"
+  },
+  {
+    "id": 18,
+    "title": "REST APIs",
+    "description": "Building and integrating robust API endpoints.",
+    "image": "/images/api.svg"
+  },
+  {
+    "id": 19,
+    "title": "Agile & Scrum",
+    "description": "Iterative development and collaboration framework.",
+    "image": "/images/agile.svg"
+  },
+  {
+    "id": 20,
+    "title": "Time Management",
+    "description": "Prioritizing tasks and managing deadlines efficiently.",
+    "image": "/images/time-management.svg"
   }
 ]
+

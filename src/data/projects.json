@@ -66,17 +66,6 @@
   "isPrivate": false
 },
   {
-    "id": 6,
-    "title": "Bus Booking System",
-    "description": "A system for booking bus tickets, checking schedules, and seat availability with payment integration.",
-    "tech": ["Django", "React", "SQLite"],
-    "image": "https://opengraph.githubassets.com/6/wabukowabuko/bus-booking-system",
-    "githubUrl": "https://github.com/wabukowabuko/bus-booking-system",
-    "demoUrl": "https://bus-booking.live",
-    "stars": 1,
-    "isPrivate": false
-  },
-  {
     "id": 7,
     "title": "Aquarium Site",
     "description": "A site showcasing aquarium products, species, care tips, and online store integration.",

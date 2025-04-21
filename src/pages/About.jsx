@@ -17,7 +17,7 @@ import { useContext } from 'react';
            <section className="text-center py-5">
              <h1 className="display-4 fw-bold">About Basil Wabuko</h1>
              <p className="lead">
-               A Computer Scientist and Full-Stack Developer from Nairobi, Kenya, passionate about crafting impactful software solutions.
+               A Computer Scientist and Full-Stack Developer who's passionate about crafting impactful software solutions.
              </p>
            </section>
 

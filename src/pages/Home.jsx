@@ -18,7 +18,7 @@ import { useContext } from 'react';
              <div className="col-lg-6 mb-4 mb-lg-0">
                <h1 className="display-4 fw-bold">Welcome to Wabuko's Portfolio</h1>
                <p className="lead">
-                 Hi, I’m Basil Wabuko, a passionate Full-Stack Developer and Computer Scientist specializing in React.js, Django, and modern web technologies. Based in Nairobi, Kenya, I’m driven to build scalable solutions that solve real-world problems.
+                 Hi, I’m Basil Wabuko, a passionate Full-Stack Developer and Computer Scientist specializing in Software Development and modern web technologies. I’m driven to build scalable solutions that solve real-world problems.
                </p>
                <div className="d-flex gap-3">
                  <Link to="/projects" className="btn btn-primary btn-lg">

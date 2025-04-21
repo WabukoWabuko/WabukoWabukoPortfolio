@@ -3,67 +3,67 @@
     "id": 1,
     "title": "React.js",
     "description": "Building dynamic UIs with React.",
-    "image": "/images/react.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
   },
   {
     "id": 2,
     "title": "JavaScript",
     "description": "Core programming for web apps.",
-    "image": "/images/javascript.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
   },
   {
     "id": 3,
     "title": "Bootstrap",
     "description": "Responsive styling framework.",
-    "image": "/images/bootstrap.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
   },
   {
     "id": 4,
     "title": "Node.js",
     "description": "Backend runtime for scalable server apps.",
-    "image": "/images/nodejs.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
   },
   {
     "id": 5,
     "title": "Python",
     "description": "Powerful scripting for automation and data science.",
-    "image": "/images/python.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
   },
   {
     "id": 6,
     "title": "MongoDB",
     "description": "NoSQL database for flexible document storage.",
-    "image": "/images/mongodb.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
   },
   {
     "id": 7,
     "title": "Docker",
     "description": "Containerize apps for consistent deployment.",
-    "image": "/images/docker.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg"
   },
   {
     "id": 8,
     "title": "Tailwind CSS",
     "description": "Utility-first CSS framework for fast styling.",
-    "image": "/images/tailwind.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"
   },
   {
     "id": 9,
     "title": "Next.js",
     "description": "React framework with SSR and API routes.",
-    "image": "/images/nextjs.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
   },
   {
     "id": 10,
     "title": "MySQL",
     "description": "Relational database management system.",
-    "image": "/images/mysql.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
   },
   {
     "id": 11,
     "title": "Git & GitHub",
     "description": "Version control and collaboration on codebases.",
-    "image": "/images/git.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"
   },
   {
     "id": 12,
@@ -78,40 +78,22 @@
     "image": "/images/communication.svg"
   },
   {
-    "id": 14,
-    "title": "Figma",
-    "description": "UI/UX design and prototyping for web/mobile apps.",
-    "image": "/images/figma.svg"
-  },
-  {
     "id": 15,
     "title": "Linux",
     "description": "Command-line and server environment mastery.",
-    "image": "/images/linux.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
   },
   {
     "id": 16,
     "title": "PostgreSQL",
     "description": "Advanced open-source relational database system.",
-    "image": "/images/postgresql.svg"
-  },
-  {
-    "id": 17,
-    "title": "TypeScript",
-    "description": "Typed superset of JavaScript for more scalable apps.",
-    "image": "/images/typescript.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
   },
   {
     "id": 18,
-    "title": "REST APIs",
+    "title": "DRF",
     "description": "Building and integrating robust API endpoints.",
-    "image": "/images/api.svg"
-  },
-  {
-    "id": 19,
-    "title": "Agile & Scrum",
-    "description": "Iterative development and collaboration framework.",
-    "image": "/images/agile.svg"
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-original.svg"
   },
   {
     "id": 20,

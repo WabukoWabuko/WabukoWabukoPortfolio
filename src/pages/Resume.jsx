@@ -14,11 +14,13 @@ import { useContext, useState } from 'react';
        const [error, setError] = useState(null);
 
        const onDocumentLoadSuccess = ({ numPages }) => {
+         console.log('PDF loaded successfully with', numPages, 'pages');
          setNumPages(numPages);
          setError(null);
        };
 
        const onDocumentLoadError = (error) => {
+         console.error('PDF load error:', error);
          setError('Failed to load resume. Please use the download link below.');
        };
 

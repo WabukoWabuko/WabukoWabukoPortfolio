@@ -18,13 +18,14 @@ function Projects() {
         const perPage = 100;
         const token = import.meta.env.VITE_GITHUB_TOKEN;
 
-        // Log token presence for debugging
+        // Enhanced debugging for token
         if (!token) {
           throw new Error('GitHub token not found. Please set VITE_GITHUB_TOKEN in your .env file.');
         }
-        console.log('Using GitHub token:', token ? 'Token present' : 'Token missing');
+        console.log('GitHub token loaded:', token ? 'Token present (length: ' + token.length + ')' : 'Token missing');
 
         while (true) {
+          console.log(`Fetching page ${page} of repositories...`);
           const response = await fetch(
             `https://api.github.com/users/wabukowabuko/repos?sort=pushed&direction=desc&per_page=${perPage}&page=${page}`,
             {
@@ -41,6 +42,7 @@ function Projects() {
           }
 
           const data = await response.json();
+          console.log(`Page ${page} returned ${data.length} repositories`);
           if (data.length === 0) break;
 
           const mappedProjects = data.map((repo) => ({
@@ -60,9 +62,10 @@ function Projects() {
         }
 
         setProjects(allProjects);
+        console.log('Total projects fetched:', allProjects.length);
       } catch (error) {
         console.error('Error fetching projects from GitHub:', error.message);
-        setProjects([]); // Fallback to empty array
+        setProjects([]);
       }
     };
     fetchProjects();

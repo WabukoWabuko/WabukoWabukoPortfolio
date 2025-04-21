@@ -5,16 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run fetch-repos && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist",
+    "fetch-repos": "node fetch-repos.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
     "bootstrap": "5.3",
+    "dotenv": "^16.5.0",
     "esbuild-visualizer": "^0.7.0",
     "framer-motion": "^12.7.4",
     "react": "^19.0.0",

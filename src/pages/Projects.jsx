@@ -18,9 +18,11 @@ function Projects() {
         const perPage = 100;
         const token = import.meta.env.VITE_GITHUB_TOKEN;
 
+        // Log token presence for debugging
         if (!token) {
           throw new Error('GitHub token not found. Please set VITE_GITHUB_TOKEN in your .env file.');
         }
+        console.log('Using GitHub token:', token ? 'Token present' : 'Token missing');
 
         while (true) {
           const response = await fetch(
@@ -34,7 +36,8 @@ function Projects() {
           );
 
           if (!response.ok) {
-            throw new Error(`GitHub API error: ${response.status} - ${response.statusText}`);
+            const errorText = await response.text();
+            throw new Error(`GitHub API error: ${response.status} - ${response.statusText}. Details: ${errorText}`);
           }
 
           const data = await response.json();
@@ -46,7 +49,7 @@ function Projects() {
             description: repo.description || 'No description available.',
             tech: [repo.language || 'Unknown', ...(repo.topics || [])],
             image: `https://opengraph.githubassets.com/${repo.id}/wabukowabuko/${repo.name}`,
-            githubUrl: repo.html_url, // Correct format: https://github.com/wabukowabuko/repo-name
+            githubUrl: repo.html_url,
             demoUrl: repo.homepage || '#',
             stars: repo.stargazers_count,
             isPrivate: repo.private,
@@ -59,7 +62,7 @@ function Projects() {
         setProjects(allProjects);
       } catch (error) {
         console.error('Error fetching projects from GitHub:', error.message);
-        setProjects([]);
+        setProjects([]); // Fallback to empty array
       }
     };
     fetchProjects();
@@ -127,7 +130,7 @@ function Projects() {
       {filteredProjects.length > projectsPerPage && (
         <div className="d-flex justify-content-between mt-4">
           <button
-            className={`btn ${theme === 'dark' ? 'btn-outline-light' : 'btn-outline-dark'}`}
+            className={`btn ${theme === 'dark' ? 'bg-dark text-light border-light' : 'bg-light text-dark border-dark'}`}
             onClick={handlePreviousPage}
             disabled={currentPage === 1}
             aria-label="Previous page"
@@ -138,7 +141,7 @@ function Projects() {
             Page {currentPage} of {totalPages}
           </span>
           <button
-            className={`btn ${theme === 'dark' ? 'btn-outline-light' : 'btn-outline-dark'}`}
+            className={`btn ${theme === 'dark' ? 'bg-dark text-light border-light' : 'bg-light text-dark border-dark'}`}
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
             aria-label="Next page"

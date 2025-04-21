@@ -21,7 +21,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
                    <Route path="projects/:id" element={<ProjectDetail />} />
                    <Route path="skills" element={<Skills />} />
                    <Route path="contact" element={<Contact />} />
-                   <Route path="resume" element={<Resume />} />
+                   <Route path="resume/" element={<Resume />} />
                  </Route>
                </Routes>
              </BrowserRouter>

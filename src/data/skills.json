@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "React.js",
+    "description": "Building dynamic UIs with React.",
+    "image": "/images/react.svg"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript",
+    "description": "Core programming for web apps.",
+    "image": "/images/javascript.svg"
+  },
+  {
+    "id": 3,
+    "title": "Bootstrap",
+    "description": "Responsive styling framework.",
+    "image": "/images/bootstrap.svg"
+  }
+]

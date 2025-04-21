@@ -1,75 +1,15 @@
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useState } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
+import projectsData from '../data/projects.json'; // Import static projects
 
 function Projects() {
   const { theme } = useContext(ThemeContext);
-  const [projects, setProjects] = useState([]);
+  const [projects] = useState(projectsData); // Use static data
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 9;
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        let allProjects = [];
-        let page = 1;
-        const perPage = 100;
-        const token = import.meta.env.VITE_GITHUB_TOKEN;
-
-        // Enhanced debugging for token
-        if (!token) {
-          throw new Error('GitHub token not found. Please set VITE_GITHUB_TOKEN in your .env file.');
-        }
-        console.log('GitHub token loaded:', token ? 'Token present (length: ' + token.length + ')' : 'Token missing');
-
-        while (true) {
-          console.log(`Fetching page ${page} of repositories...`);
-          const response = await fetch(
-            `https://api.github.com/users/wabukowabuko/repos?sort=pushed&direction=desc&per_page=${perPage}&page=${page}`,
-            {
-              headers: {
-                Authorization: `token ${token}`,
-                Accept: 'application/vnd.github.v3+json',
-              },
-            }
-          );
-
-          if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error(`GitHub API error: ${response.status} - ${response.statusText}. Details: ${errorText}`);
-          }
-
-          const data = await response.json();
-          console.log(`Page ${page} returned ${data.length} repositories`);
-          if (data.length === 0) break;
-
-          const mappedProjects = data.map((repo) => ({
-            id: repo.id,
-            title: repo.name,
-            description: repo.description || 'No description available.',
-            tech: [repo.language || 'Unknown', ...(repo.topics || [])],
-            image: `https://opengraph.githubassets.com/${repo.id}/wabukowabuko/${repo.name}`,
-            githubUrl: repo.html_url,
-            demoUrl: repo.homepage || '#',
-            stars: repo.stargazers_count,
-            isPrivate: repo.private,
-          }));
-
-          allProjects = [...allProjects, ...mappedProjects];
-          page += 1;
-        }
-
-        setProjects(allProjects);
-        console.log('Total projects fetched:', allProjects.length);
-      } catch (error) {
-        console.error('Error fetching projects from GitHub:', error.message);
-        setProjects([]);
-      }
-    };
-    fetchProjects();
-  }, []);
 
   const filteredProjects = projects.filter((project) =>
     project.tech.some((tech) =>

@@ -1,31 +1,24 @@
-{
-         "projects": [
-           {
-             "id": 1,
-             "title": "Task Manager",
-             "description": "A task management app with user authentication and task CRUD operations.",
-             "tech": ["React.js"],
-             "image": "/WabukoWabukoPortfolio/images/task-manager.png",
-             "github": "https://github.com/yourusername/task-manager",
-             "demo": "https://yourusername.github.io/task-manager"
-           },
-           {
-             "id": 2,
-             "title": "Data Visualization Dashboard",
-             "description": "An interactive dashboard for visualizing data with charts.",
-             "tech": ["React.js", "react-chartjs-2"],
-             "image": "/WabukoWabukoPortfolio/images/dashboard.png",
-             "github": "https://github.com/yourusername/dashboard",
-             "demo": "https://yourusername.github.io/dashboard"
-           },
-           {
-             "id": 3,
-             "title": "3D AI Model Viewer",
-             "description": "A 3D model viewer with interactive controls using react-three-fiber.",
-             "tech": ["React.js", "react-three-fiber"],
-             "image": "/WabukoWabukoPortfolio/images/ai-model.png",
-             "github": "https://github.com/yourusername/ai-model-viewer",
-             "demo": "https://yourusername.github.io/ai-model-viewer"
-           }
-         ]
-       }
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "description": "A personal portfolio showcasing my projects and skills.",
+    "tech": ["React", "Vite", "Bootstrap"],
+    "image": "https://opengraph.githubassets.com/1/wabukowabuko/WabukoWabukoPortfolio",
+    "githubUrl": "https://github.com/wabukowabuko/WabukoWabukoPortfolio",
+    "demoUrl": "https://yourusername.github.io/WabukoWabukoPortfolio",
+    "stars": 10,
+    "isPrivate": false
+  },
+  {
+    "id": 2,
+    "title": "E-commerce App",
+    "description": "A full-stack e-commerce application with payment integration.",
+    "tech": ["React", "Node.js", "MongoDB"],
+    "image": "https://opengraph.githubassets.com/2/wabukowabuko/ecommerce-app",
+    "githubUrl": "https://github.com/wabukowabuko/ecommerce-app",
+    "demoUrl": "https://ecommerce-app-demo.com",
+    "stars": 5,
+    "isPrivate": true
+  }
+]

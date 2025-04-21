@@ -48,7 +48,7 @@ import { useContext } from 'react';
                    With a strong foundation in full-stack development and a knack for problem-solving, I’ve built impactful solutions like an e-commerce platform for urban artists. My skills span web technologies, data science, and cloud-native development.
                  </p>
                  <p className="text-center">
-                   Want to see more? Check out my projects, skills, or dive into my full resume!
+                   Want to see more? Check out my skills or explore other sections!
                  </p>
                </div>
              </div>
@@ -57,14 +57,8 @@ import { useContext } from 'react';
            {/* Call-to-Action */}
            <section className="py-5 text-center">
              <div className="d-flex gap-3 justify-content-center">
-               <Link to="/projects" className="btn btn-primary btn-lg">
-                 Explore Projects
-               </Link>
                <Link to="/skills" className="btn btn-outline-primary btn-lg">
                  View Skills
-               </Link>
-               <Link to="/resume" className="btn btn-outline-primary btn-lg">
-                 See Resume
                </Link>
              </div>
            </section>

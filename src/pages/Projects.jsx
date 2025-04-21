@@ -8,16 +8,15 @@ function Projects() {
   const [projects, setProjects] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 9; // Display 9 projects per page
+  const projectsPerPage = 9;
 
-  // Fetch all projects from GitHub with pagination
   useEffect(() => {
     const fetchProjects = async () => {
       try {
         let allProjects = [];
         let page = 1;
-        const perPage = 100; // Maximum allowed per page
-        const token = import.meta.env.VITE_GITHUB_TOKEN; // Updated for Vite
+        const perPage = 100;
+        const token = import.meta.env.VITE_GITHUB_TOKEN;
 
         if (!token) {
           throw new Error('GitHub token not found. Please set VITE_GITHUB_TOKEN in your .env file.');
@@ -39,13 +38,18 @@ function Projects() {
           }
 
           const data = await response.json();
-          if (data.length === 0) break; // No more repositories to fetch
+          if (data.length === 0) break;
 
           const mappedProjects = data.map((repo) => ({
             id: repo.id,
             title: repo.name,
             description: repo.description || 'No description available.',
-            tech: [repo.language || 'Unknown', ...(repo.topics || [])], // Include topics for better tech filtering
+            tech: [repo.language || 'Unknown', ...(repo.topics || [])],
+            image: `https://opengraph.githubassets.com/${repo.id}/wabukowabuko/${repo.name}`,
+            githubUrl: repo.html_url, // Correct format: https://github.com/wabukowabuko/repo-name
+            demoUrl: repo.homepage || '#',
+            stars: repo.stargazers_count,
+            isPrivate: repo.private,
           }));
 
           allProjects = [...allProjects, ...mappedProjects];
@@ -55,20 +59,18 @@ function Projects() {
         setProjects(allProjects);
       } catch (error) {
         console.error('Error fetching projects from GitHub:', error.message);
-        setProjects([]); // Fallback to empty array
+        setProjects([]);
       }
     };
     fetchProjects();
   }, []);
 
-  // Filter projects based on search term
   const filteredProjects = projects.filter((project) =>
     project.tech.some((tech) =>
       tech.toLowerCase().includes(searchTerm.toLowerCase())
     )
   );
 
-  // Pagination logic
   const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
   const startIndex = (currentPage - 1) * projectsPerPage;
   const paginatedProjects = filteredProjects.slice(startIndex, startIndex + projectsPerPage);
@@ -94,7 +96,6 @@ function Projects() {
     >
       <h1 className="mb-4">My Projects</h1>
 
-      {/* Search Section */}
       <div className="mb-4">
         <input
           type="text"
@@ -103,13 +104,12 @@ function Projects() {
           value={searchTerm}
           onChange={(e) => {
             setSearchTerm(e.target.value);
-            setCurrentPage(1); // Reset to first page on search
+            setCurrentPage(1);
           }}
           aria-label="Search projects by technology"
         />
       </div>
 
-      {/* Project Cards */}
       <div className="row row-cols-1 row-cols-md-3 g-4" role="region" aria-label="Project cards">
         {paginatedProjects.length > 0 ? (
           paginatedProjects.map((project) => (
@@ -124,7 +124,6 @@ function Projects() {
         )}
       </div>
 
-      {/* Pagination Controls */}
       {filteredProjects.length > projectsPerPage && (
         <div className="d-flex justify-content-between mt-4">
           <button

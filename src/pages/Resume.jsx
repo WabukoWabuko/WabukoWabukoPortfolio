@@ -8,7 +8,7 @@ import { useContext } from 'react';
        // Determine base URL based on environment
        const baseUrl = import.meta.env.MODE === 'development'
          ? 'http://localhost:5173/WabukoWabukoPortfolio'
-         : 'https://yourusername.github.io/WabukoWabukoPortfolio';
+         : 'https://WabukoWabuko.github.io/WabukoWabukoPortfolio';
 
        // Construct absolute URL for the PDF
        const pdfUrl = `${baseUrl}/WabukoWabukoPortfolio/resume.pdf`;
@@ -51,7 +51,7 @@ import { useContext } from 'react';
                <div className="d-flex gap-3 mt-3 justify-content-center">
                  <a
                    href={pdfUrl}
-                   download="YourName_Resume.pdf"
+                   download="Basil_Lambert_Wabuko_Resume.pdf"
                    className="btn btn-primary"
                    aria-label="Download resume"
                  >

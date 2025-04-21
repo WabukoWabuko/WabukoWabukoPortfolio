@@ -5,17 +5,26 @@ import { useContext } from 'react';
      function Resume() {
        const { theme } = useContext(ThemeContext);
 
-       const handlePrint = () => {
-         window.print();
-       };
-
        // Determine base URL based on environment
        const baseUrl = import.meta.env.MODE === 'development'
-         ? 'http://localhost:5173'
-         : 'https://yourusername.github.io';
+         ? 'http://localhost:5173/WabukoWabukoPortfolio'
+         : 'https://yourusername.github.io/WabukoWabukoPortfolio';
 
        // Construct absolute URL for the PDF
        const pdfUrl = `${baseUrl}/WabukoWabukoPortfolio/resume.pdf`;
+
+       const handlePrint = () => {
+         // Open the PDF in a new window
+         const printWindow = window.open(pdfUrl, '_blank');
+         if (printWindow) {
+           printWindow.onload = () => {
+             printWindow.print();
+           };
+         } else {
+           // Fallback if popup is blocked
+           alert('Please allow popups to print the resume, or download and print manually.');
+         }
+       };
 
        return (
          <motion.div

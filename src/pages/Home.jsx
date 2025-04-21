@@ -31,7 +31,7 @@ import { useContext } from 'react';
              </div>
              <div className="col-lg-6">
                <img
-                 src="/WabukoWabukoPortfolio/images/headshot.png"
+                 src="/WabukoWabukoPortfolio/images/headshot.jpeg"
                  alt="Headshot of Basil Wabuko"
                  className="img-fluid rounded-circle"
                  style={{ maxWidth: '300px' }}

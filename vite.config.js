@@ -4,5 +4,9 @@ import ViteGhPages from 'vite-plugin-gh-pages';
 
 export default defineConfig({
   plugins: [react(), ViteGhPages],
-  base: '/WabukoWabukoPortfolio/'
+  base: '/WabukoWabukoPortfolio/',
+  build: {
+    assetsDir: 'assets', // Ensure assets are placed in a subdirectory (default)
+    outDir: 'dist', // Default output directory
+  },
 });

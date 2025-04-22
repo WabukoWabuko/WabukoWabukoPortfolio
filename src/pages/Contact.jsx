@@ -138,7 +138,7 @@ import { useContext, useState, useEffect, useRef } from 'react';
                  </div>
                  <div className="d-flex justify-content-center gap-3 mt-3">
                    <motion.a
-                     href="https://github.com/yourusername"
+                     href="https://github.com/WabukoWabuko"
                      className="btn btn-outline-primary"
                      whileHover={{ scale: 1.1 }}
                      transition={{ duration: 0.3 }}
@@ -149,7 +149,7 @@ import { useContext, useState, useEffect, useRef } from 'react';
                      GitHub
                    </motion.a>
                    <motion.a
-                     href="https://linkedin.com/in/yourusername"
+                     href="https://www.linkedin.com/in/wabuko-wabuko-431669209/"
                      className="btn btn-outline-primary"
                      whileHover={{ scale: 1.1 }}
                      transition={{ duration: 0.3 }}

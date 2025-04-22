@@ -7,7 +7,7 @@
     "image": "https://opengraph.githubassets.com/1/wabukowabuko/WabukowabukoPortfolio",
     "githubUrl": "https://github.com/wabukowabuko/WabukoWabukoPortfolio",
     "demoUrl": "https://yourusername.github.io/WabukoWabukoPortfolio",
-    "stars": 10,
+    "stars": 1,
     "isPrivate": false
   },
   {
@@ -18,7 +18,7 @@
     "image": "https://opengraph.githubassets.com/2/wabukowabuko/eCommerce",
     "githubUrl": "https://github.com/wabukowabuko/ecommerce-app",
     "demoUrl": "https://ecommerce-app-demo.com",
-    "stars": 5,
+    "stars": 1,
     "isPrivate": true
   },
   {
@@ -51,7 +51,7 @@
   "image": "https://opengraph.githubassets.com/3/wabukowabuko/RDBMS",
   "githubUrl": "https://github.com/WabukoWabuko/RDBMS",
   "demoUrl": "https://wabukowabuko.github.io/RDBMS",
-  "stars": 2,
+  "stars": 1,
   "isPrivate": false
 },
 {
@@ -62,7 +62,7 @@
   "image": "https://opengraph.githubassets.com/3/wabukowabuko/bus_booking_system",
   "githubUrl": "https://github.com/wabukowabuko/bus_booking_system",
   "demoUrl": "https://wabukowabuko.github.io/bus_booking_system",
-  "stars": 6,
+  "stars": 1,
   "isPrivate": false
 },
   {
@@ -151,7 +151,7 @@
     "githubUrl": "https://github.com/wabukowabuko/media-player",
     "demoUrl": "https://media-player.com",
     "stars": 1,
-    "isPrivate": false
+    "isPrivate": true
   },
   {
     "id": 15,
@@ -162,7 +162,7 @@
     "githubUrl": "https://github.com/wabukowabuko/farmer-app",
     "demoUrl": "https://farmer-app.dev",
     "stars": 1,
-    "isPrivate": false
+    "isPrivate": true
   },
   {
     "id": 16,
@@ -173,7 +173,7 @@
     "githubUrl": "https://github.com/wabukowabuko/pos-system",
     "demoUrl": "https://pos-system.live",
     "stars": 1,
-    "isPrivate": false
+    "isPrivate": true
   },
   {
     "id": 17,
@@ -206,7 +206,7 @@
     "githubUrl": "https://github.com/wabukowabuko/Email_FAQ_Replier",
     "demoUrl": "https://faq-replier.ai",
     "stars": 1,
-    "isPrivate": false
+    "isPrivate": true
   },
   {
     "id": 20,
@@ -239,7 +239,7 @@
     "githubUrl": "https://github.com/wabukowabuko/VacatioAndRentalHomes",
     "demoUrl": "https://vacation-booking.io",
     "stars": 1,
-    "isPrivate": false
+    "isPrivate": true
   },
   {
     "id": 23,
@@ -250,7 +250,7 @@
     "githubUrl": "https://github.com/wabukowabuko/soil-assessment-ml",
     "demoUrl": "https://soil-ml.dev",
     "stars": 1,
-    "isPrivate": false
+    "isPrivate": true
   },
   {
     "id": 24,

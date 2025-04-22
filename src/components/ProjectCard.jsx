@@ -12,6 +12,13 @@ function ProjectCard({ project }) {
     }
   };
 
+  const handleDemoClick = (e) => {
+    if (project.isPrivate) {
+      e.preventDefault();
+      setShowModal(true);
+    }
+  };
+
   return (
     <>
       <div className={`card h-100 ${theme === 'dark' ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
@@ -34,9 +41,9 @@ function ProjectCard({ project }) {
               </span>
             ))}
           </div>
-          {/* Star Count */}
+          {/* Star Count with ★ Symbol */}
           <div className="mb-2 d-flex align-items-center">
-            <i className="bi bi-star-fill text-warning me-2"></i>
+            <span className="text-warning me-2">★</span>
             <span>{project.stars}</span>
           </div>
           <div className="d-flex gap-2">
@@ -55,6 +62,7 @@ function ProjectCard({ project }) {
             {/* Demo Button */}
             <a
               href={project.demoUrl}
+              onClick={handleDemoClick}
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"

@@ -22,7 +22,7 @@ function ProjectCard({ project }) {
           className="card-img-top"
           style={{ height: '150px', objectFit: 'cover' }}
           loading="lazy"
-          onError={(e) => (e.target.src = '/WabukoWabukoPortfolio/images/placeholder.png')} // Fallback image
+          onError={(e) => (e.target.src = '/images/placeholder.png')} // Fallback image
         />
         <div className="card-body d-flex flex-column">
           <h5 className="card-title">{project.title}</h5>

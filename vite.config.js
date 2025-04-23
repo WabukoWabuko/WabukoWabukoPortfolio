@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import ViteGhPages from 'vite-plugin-gh-pages';
+   import react from '@vitejs/plugin-react';
 
-export default defineConfig({
-  plugins: [react(), ViteGhPages],
-  base: '/WabukoWabukoPortfolio/',
-  build: {
-    assetsDir: 'assets', // Ensure assets are placed in a subdirectory (default)
-    outDir: 'dist', // Default output directory
-  },
-});
+   export default defineConfig({
+     plugins: [react()],
+     base: process.env.NODE_ENV === 'production' ? '' : '/WabukoWabukoPortfolio/',
+     build: {
+       assetsDir: 'assets',
+       outDir: 'dist',
+     },
+   });

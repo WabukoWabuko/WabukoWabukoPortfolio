@@ -12,7 +12,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
        function App() {
          return (
            <ThemeProvider>
-             <BrowserRouter basename="/WabukoWabukoPortfolio/">
+             <BrowserRouter basename="/">
                <Routes>
                  <Route path="/" element={<Layout />}>
                    <Route index element={<Home />} />

@@ -57,20 +57,20 @@ function Footer() {
             className="text-decoration-none text-primary"
             style={{ cursor: 'pointer' }}
           >
-            Phone: +254 123 456 789
+            Phone: +254740750403
           </a>
           <span>|</span>
           <a
-            href="#"
+            href="+254740750403"
             onClick={(e) => { e.preventDefault(); handleEmailClick(); }}
             className="text-decoration-none text-primary"
             style={{ cursor: 'pointer' }}
           >
-            Email: wabuko@example.com
+            Email: basilwabbs@gmail.com
           </a>
           <span>|</span>
           <a
-            href="#"
+            href="mailto:basilwabbs@gmail.com"
             onClick={(e) => { e.preventDefault(); handleLocationClick(); }}
             className="text-decoration-none text-primary"
             style={{ cursor: 'pointer' }}
@@ -88,7 +88,7 @@ function Footer() {
           </a>
           <span>|</span>
           <a
-            href="#"
+            href="https://github.com/WabukoWabuko"
             onClick={(e) => { e.preventDefault(); handleLinkedInClick(); }}
             className="text-decoration-none text-primary"
             style={{ cursor: 'pointer' }}
@@ -97,7 +97,7 @@ function Footer() {
           </a>
           <span>|</span>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/wabuko-wabuko-431669209/"
             onClick={(e) => { e.preventDefault(); handleTwitterClick(); }}
             className="text-decoration-none text-primary"
             style={{ cursor: 'pointer' }}
@@ -106,7 +106,7 @@ function Footer() {
           </a>
           <span>|</span>
           <a
-            href="#"
+            href="https://x.com/WabukoWabby"
             onClick={(e) => { e.preventDefault(); handleInstagramClick(); }}
             className="text-decoration-none text-primary"
             style={{ cursor: 'pointer' }}
@@ -115,16 +115,16 @@ function Footer() {
           </a>
           <span>|</span>
           <a
-            href="#"
+            href="https://instagram.com/WabukoWabuko"
             onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
             className="text-decoration-none text-primary"
             style={{ cursor: 'pointer' }}
           >
-            WhatsApp: +254 123 456 789
+            WhatsApp: +254740750403
           </a>
           <span>|</span>
           <a
-            href="#"
+            href="wa me: +254740750403"
             onClick={(e) => { e.preventDefault(); handleFacebookClick(); }}
             className="text-decoration-none text-primary"
             style={{ cursor: 'pointer' }}

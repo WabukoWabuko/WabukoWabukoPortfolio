@@ -8,4 +8,9 @@ import { defineConfig } from 'vite';
        assetsDir: 'assets',
        outDir: 'dist',
      },
+     server: {
+    // Ensure SPA routing works by redirecting all requests to index.html
+    historyApiFallback: true,
+  },
    });
+

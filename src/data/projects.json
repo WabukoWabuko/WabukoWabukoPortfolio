@@ -4,7 +4,7 @@
     "title": "Portfolio Website",
     "description": "A personal portfolio showcasing my projects and skills.",
     "tech": ["React", "Vite", "Bootstrap"],
-    "image": "https://opengraph.githubassets.com/1/wabukowabuko/WabukowabukoPortfolio",
+    "image": "images/Portfolio.png",
     "githubUrl": "https://github.com/wabukowabuko/WabukoWabukoPortfolio",
     "demoUrl": "https://yourusername.github.io/WabukoWabukoPortfolio",
     "stars": 1,

@@ -1,0 +1,63 @@
+.container-certifications {
+  min-height: calc(100vh - 200px);
+}
+
+.card-certification {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card-certification:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-certification.expanded {
+  height: auto;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.cert-details {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: relative;
+}
+
+.cert-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cert-details a:hover {
+  text-decoration: underline;
+}
+
+/* Transparent overlay to block screenshots */
+.screenshot-blocker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+}
+
+/* Watermark overlay for expanded details */
+.watermark-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color: rgba(255, 0, 0, 0.3);
+  font-size: 1.5rem;
+  font-weight: bold;
+  pointer-events: none;
+  z-index: 2;
+}

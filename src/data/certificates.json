@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Certificate in Web Development",
+    "issuer": "Coursera",
+    "date": "2023-06-15",
+    "description": "Completed a comprehensive course on web development techniques.",
+    "credentialId": "CRED123456",
+    "link": "https://www.coursera.org/verify/CRED123456",
+    "file": "web-development-certificate.pdf"
+  },
+  {
+    "title": "Python Programming Certification",
+    "issuer": "Udemy",
+    "date": "2022-11-10",
+    "description": "Mastered Python programming with a focus on data analysis.",
+    "credentialId": "PY123456",
+    "link": "https://www.udemy.com/certificate/PY123456",
+    "file": "python-certification.pdf"
+  },
+  {
+    "title": "AWS Certified Solutions Architect",
+    "issuer": "Amazon Web Services",
+    "date": "2024-01-20",
+    "description": "Certified in designing distributed systems on AWS.",
+    "credentialId": "AWS789101",
+    "link": "https://aws.amazon.com/certification/verify/AWS789101",
+    "file": "aws-solutions-architect.pdf"
+  }
+]

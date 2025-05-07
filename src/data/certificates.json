@@ -1,29 +1,103 @@
 [
   {
-    "title": "Certificate in Web Development",
-    "issuer": "Coursera",
-    "date": "2023-06-15",
-    "description": "Completed a comprehensive course on web development techniques.",
-    "credentialId": "CRED123456",
-    "link": "https://www.coursera.org/verify/CRED123456",
-    "file": "web-development-certificate.pdf"
+    "title": "Bachelor of Science in Computer Science",
+    "issuer": "Kisii University",
+    "date": "2024-12-17",
+    "description": "Graduated with a BSc in Computer Science. Focused on software engineering, systems programming, and machine learning.",
+    "credentialId": "private",
+    "link": "private",
+    "file": "bsc-computer-science-degree.pdf"
   },
   {
-    "title": "Python Programming Certification",
+    "title": "Full-Stack Web Developer (Django & React)",
+    "issuer": "eMobilis",
+    "date": "2024-12-17",
+    "description": "Completed an intensive full-stack web development program focused on building scalable web apps using Django (backend) and React (frontend). Covered REST APIs, authentication, PostgreSQL, and deployment.",
+    "credentialId": "private",
+    "link": "private",
+"file": "emobilis-django-react-cert.pdf"
+}
+
+  {
+    "title": "Meta Front-End Developer Certificate",
+    "issuer": "Coursera / Meta",
+    "date": "2023-08-10",
+    "description": "Completed Meta's professional certificate in front-end development. Learned HTML, CSS, JavaScript, React, and UI design principles.",
+    "credentialId": "private",
+    "link": "private",
+    "file": "meta-frontend-cert.pdf"
+  },
+  {
+    "title": "Google IT Support Certificate",
+    "issuer": "Coursera / Google",
+    "date": "2022-06-01",
+    "description": "Gained foundational IT skills including networking, security, and system administration.",
+    "credentialId": "private",
+    "link": "private",
+    "file": "google-it-support-cert.pdf"
+  },
+  {
+    "title": "Python for Data Science and Machine Learning Bootcamp",
     "issuer": "Udemy",
     "date": "2022-11-10",
-    "description": "Mastered Python programming with a focus on data analysis.",
-    "credentialId": "PY123456",
-    "link": "https://www.udemy.com/certificate/PY123456",
-    "file": "python-certification.pdf"
+    "description": "Covered Python, NumPy, Pandas, Matplotlib, Seaborn, SciKit-Learn, and TensorFlow.",
+    "credentialId": "private",
+    "link": "private",
+    "file": "python-ml-cert.pdf"
   },
   {
-    "title": "AWS Certified Solutions Architect",
+    "title": "AWS Certified Solutions Architect – Associate",
     "issuer": "Amazon Web Services",
     "date": "2024-01-20",
-    "description": "Certified in designing distributed systems on AWS.",
-    "credentialId": "AWS789101",
-    "link": "https://aws.amazon.com/certification/verify/AWS789101",
+    "description": "Validated ability to design fault-tolerant, scalable systems on AWS.",
+    "credentialId": "private",
+    "link": "private",
     "file": "aws-solutions-architect.pdf"
+  },
+  {
+    "title": "Full Stack Developer Certification",
+    "issuer": "freeCodeCamp",
+    "date": "2023-09-01",
+    "description": "Built and deployed multiple projects using Node.js, MongoDB, Express, and React.",
+    "credentialId": "private",
+    "link": "private",
+    "file": "freecodecamp-fullstack-cert.pdf"
+  },
+  {
+    "title": "Docker and Kubernetes: The Complete Guide",
+    "issuer": "Udemy",
+    "date": "2023-05-18",
+    "description": "Learned containerization and orchestration fundamentals with hands-on deployments.",
+    "credentialId": "private",
+    "link": "private",
+    "file": "docker-k8s-cert.pdf"
+  },
+  {
+    "title": "Advanced JavaScript Concepts",
+    "issuer": "Udemy",
+    "date": "2023-03-12",
+    "description": "Mastered closures, prototypal inheritance, asynchronous JS, and performance optimization.",
+    "credentialId": "private",
+    "link": "private",
+    "file": "advanced-javascript-cert.pdf"
+  },
+  {
+    "title": "Introduction to Cybersecurity",
+    "issuer": "Cisco Networking Academy",
+    "date": "2022-12-02",
+    "description": "Explored cybersecurity fundamentals, threat intelligence, and ethical hacking basics.",
+    "credentialId": "private",
+    "link": "private",
+    "file": "intro-cybersecurity-cert.pdf"
+  },
+  {
+    "title": "Linux Essentials Certification",
+    "issuer": "Linux Professional Institute",
+    "date": "2023-04-22",
+    "description": "Covered shell scripting, package management, permissions, and Linux system architecture.",
+    "credentialId": "private",
+    "link": "private",
+    "file": "linux-essentials-cert.pdf"
   }
 ]
+

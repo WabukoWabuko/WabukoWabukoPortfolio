@@ -1,4 +1,4 @@
- A modern, interactive portfolio showcasing my skills as a Computer Scientist specializing in React.js, built for global tech opportunities in 2025.
+ A modern, interactive portfolio showcasing my skills as a Computer Scientist specializing in Software Development using diverse languages, for global tech opportunities in 2025.
 
 ## Overview
 

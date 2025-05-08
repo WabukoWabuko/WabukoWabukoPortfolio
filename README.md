@@ -4,7 +4,7 @@
 
  This portfolio demonstrates my expertise in front-end development through a responsive, accessible web application. It features dynamic project showcases, a 3D visualization using react-three-fiber, and a seamless user experience with Bootstrap and Framer Motion.
 
- 🔗 **Live Demo**: [https://WabukoWabuko.github.io/WabukoWabukoPortfolio/](https://WabukoWabuko.github.io/WabukoWabukoPortfolio/)
+ 🔗 **Live Demo**: [https://wabuko-portfolio.vercel.app/](https://WabukoPortfolio/)
 
  ## Features
 
@@ -48,10 +48,10 @@
  ## Contact
 
  Reach out via:
- - [Portfolio Contact Form](https://WabukoWabuko.github.io/WabukoWabukoPortfolio/contact)
+ - [Portfolio Contact Form](https://wabuko-portfolio.vercel.app/contact)
  - [LinkedIn](https://www.linkedin.com/in/wabuko-wabuko-431669209/)
  - [GitHub](https://github.com/WabukoWabuko)
- - Email: your.email@example.com
+ - Email: basilwabbs@gmail.com
 
  ## License
 

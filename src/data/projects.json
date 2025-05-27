@@ -1,4 +1,59 @@
 [
+    {
+    "id": 30,
+    "title": "Internet Cafe Manager",
+    "description": "System that helps manage computers in a setup, manage network, remote control of another PC.",
+    "tech": ["Python", "PyQt5", "XML", "PostgreSQL", "SQLite3"],
+    "image": "https://opengraph.githubassets.com/29/wabukowabuko/internet_cafe_manager  ",
+    "githubUrl": "https://github.com/wabukowabuko/internet_cafe_manager  ",
+    "demoUrl": "https://internet_cafe_manager-demo.com/",
+    "stars": 1,
+    "isPrivate": true
+  },
+    {
+    "id": 29,
+    "title": "Bible Study",
+    "description": "Sharing topics that are challenging to see people's views and input.",
+    "tech": ["React", "Vite", "Bootstrap", "PostgreSQL"],
+    "image": "https://opengraph.githubassets.com/29/wabukowabuko/BibleStudyCTK ",
+    "githubUrl": "https://github.com/wabukowabuko/BibleStudyCTK ",
+    "demoUrl": "https://biblestudyctk.vercel.app/",
+    "stars": 1,
+    "isPrivate": true
+  },
+    {
+    "id": 28,
+    "title": "Microfinance Manager",
+    "description": "Deals with finances for group savings with embedded Daraja API.",
+    "tech": ["Python", "PyQt5", "XML"],
+    "image": "https://opengraph.githubassets.com/28/wabukowabuko/microfinance_manager",
+    "githubUrl": "https://github.com/wabukowabuko/microfinance_manager",
+    "demoUrl": "https://microfinance_manager-demo.com/",
+    "stars": 1,
+    "isPrivate": false
+  },
+    {
+    "id": 27,
+    "title": "CybNex Tech",
+    "description": "Digital Infrastructure for the 30th Century using future UI/UX.",
+    "tech": ["React", "Vite", "Bootstrap"],
+    "image": "https://opengraph.githubassets.com/27/wabukowabuko/WabukoWabuko",
+    "githubUrl": "https://github.com/wabukowabuko/WabukoWabuko",
+    "demoUrl": "https://cybnex-tech.vercel.app/",
+    "stars": 1,
+    "isPrivate": false
+  },
+   {
+    "id": 26,
+    "title": "MicroClinic Plus Pharmacy Manager",
+    "description": "Revolutionizing Pharmacy Operations with Unmatched Efficiency and Elegance",
+    "tech": ["React", "Vite", "Bootstrap"],
+    "image": "https://opengraph.githubassets.com/26/wabukowabuko/MicroClinicPlusPharmacyManager",
+    "githubUrl": "https://github.com/wabukowabuko/MicroClinicPlusPharmacyManager",
+    "demoUrl": "https://microclinic.vercel.app/",
+    "stars": 1,
+    "isPrivate": false
+  },
   {
     "id": 1,
     "title": "Portfolio Website",
@@ -6,7 +61,7 @@
     "tech": ["React", "Vite", "Bootstrap"],
     "image": "images/Portfolio.png",
     "githubUrl": "https://github.com/wabukowabuko/WabukoWabukoPortfolio",
-    "demoUrl": "https://yourusername.github.io/WabukoWabukoPortfolio",
+    "demoUrl": "https://wabuko-portfolio.vercel.app",
     "stars": 1,
     "isPrivate": false
   },

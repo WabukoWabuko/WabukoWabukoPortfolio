@@ -34,7 +34,7 @@ function Home() {
         </div>
         <div className="col-lg-6">
           <img
-            src="images/headshot2.JPG"
+            src="images/headshot3.png"
             alt="Headshot of Basil Wabuko"
             className="img-fluid rounded-circle"
             style={{ maxWidth: '300px' }}

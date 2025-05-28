@@ -26,7 +26,7 @@
     "title": "Microfinance Manager",
     "description": "Deals with finances for group savings with embedded Daraja API.",
     "tech": ["Python", "PyQt5", "XML"],
-    "image": "https://opengraph.githubassets.com/28/wabukowabuko/microfinance_manager",
+    "image": "images/microfinance.png",
     "githubUrl": "https://github.com/wabukowabuko/microfinance_manager",
     "demoUrl": "https://microfinance_manager-demo.com/",
     "stars": 1,

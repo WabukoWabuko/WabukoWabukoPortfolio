@@ -56,14 +56,14 @@
   },
     {
     "id": 31,
-    "title": "Internet Cafe Manager",
-    "description": "System that helps manage computers in a setup, manage network, remote control of another PC.",
-    "tech": ["Python", "PyQt5", "XML", "PostgreSQL", "SQLite3"],
+    "title": "Project Manager",
+    "description": "This is a project built for developers to help track projects that are live, those still under development, those fully paid and those partially or not yet paid for.",
+    "tech": ["Python", "TS", "React", "PostgreSQL", "SQLite3"],
     "image": "images/ProjectMaster.png",
     "githubUrl": "https://github.com/wabukowabuko/build-master",
     "demoUrl": "https://build-master-fawn.vercel.app/",
     "stars": 1,
-    "isPrivate": true
+    "isPrivate": false
   },
     {
     "id": 30,

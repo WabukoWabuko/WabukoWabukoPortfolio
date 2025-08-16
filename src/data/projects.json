@@ -1,5 +1,71 @@
 [
     {
+    "id": 35,
+    "title": "Internet Cafe Manager",
+    "description": "System that helps manage computers in a setup, manage network, remote control of another PC.",
+    "tech": ["Python", "PyQt5", "XML", "PostgreSQL", "SQLite3"],
+    "image": "https://opengraph.githubassets.com/29/wabukowabuko/internet_cafe_manager  ",
+    "githubUrl": "https://github.com/wabukowabuko/internet_cafe_manager  ",
+    "demoUrl": "https://internet_cafe_manager-demo.com/",
+    "stars": 1,
+    "isPrivate": true
+  },
+    {
+    "id": 30,
+    "title": "Internet Cafe Manager",
+    "description": "System that helps manage computers in a setup, manage network, remote control of another PC.",
+    "tech": ["Python", "PyQt5", "XML", "PostgreSQL", "SQLite3"],
+    "image": "https://opengraph.githubassets.com/29/wabukowabuko/internet_cafe_manager  ",
+    "githubUrl": "https://github.com/wabukowabuko/internet_cafe_manager  ",
+    "demoUrl": "https://internet_cafe_manager-demo.com/",
+    "stars": 1,
+    "isPrivate": true
+  },
+    {
+    "id": 34,
+    "title": "Internet Cafe Manager",
+    "description": "System that helps manage computers in a setup, manage network, remote control of another PC.",
+    "tech": ["Python", "PyQt5", "XML", "PostgreSQL", "SQLite3"],
+    "image": "https://opengraph.githubassets.com/29/wabukowabuko/internet_cafe_manager  ",
+    "githubUrl": "https://github.com/wabukowabuko/internet_cafe_manager  ",
+    "demoUrl": "https://internet_cafe_manager-demo.com/",
+    "stars": 1,
+    "isPrivate": true
+  },
+    {
+    "id": 33,
+    "title": "Internet Cafe Manager",
+    "description": "System that helps manage computers in a setup, manage network, remote control of another PC.",
+    "tech": ["Python", "PyQt5", "XML", "PostgreSQL", "SQLite3"],
+    "image": "https://opengraph.githubassets.com/29/wabukowabuko/internet_cafe_manager  ",
+    "githubUrl": "https://github.com/wabukowabuko/internet_cafe_manager  ",
+    "demoUrl": "https://internet_cafe_manager-demo.com/",
+    "stars": 1,
+    "isPrivate": true
+  },
+    {
+    "id": 32,
+    "title": "Internet Cafe Manager",
+    "description": "System that helps manage computers in a setup, manage network, remote control of another PC.",
+    "tech": ["Python", "PyQt5", "XML", "PostgreSQL", "SQLite3"],
+    "image": "https://opengraph.githubassets.com/29/wabukowabuko/internet_cafe_manager  ",
+    "githubUrl": "https://github.com/wabukowabuko/internet_cafe_manager  ",
+    "demoUrl": "https://internet_cafe_manager-demo.com/",
+    "stars": 1,
+    "isPrivate": true
+  },
+    {
+    "id": 31,
+    "title": "Internet Cafe Manager",
+    "description": "System that helps manage computers in a setup, manage network, remote control of another PC.",
+    "tech": ["Python", "PyQt5", "XML", "PostgreSQL", "SQLite3"],
+    "image": "images/ProjectMaster.png",
+    "githubUrl": "https://github.com/wabukowabuko/build-master",
+    "demoUrl": "https://build-master-fawn.vercel.app/",
+    "stars": 1,
+    "isPrivate": true
+  },
+    {
     "id": 30,
     "title": "Internet Cafe Manager",
     "description": "System that helps manage computers in a setup, manage network, remote control of another PC.",

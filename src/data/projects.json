@@ -94,7 +94,7 @@
     "tech": ["Python", "TS", "React", "PostgreSQL", "SQLite3"],
     "image": "images/KreativeUrbanCanvas.png",
     "githubUrl": "https://github.com/wabukowabuko/kreative-urban-canvas",
-    "demoUrl": ""https://thee-urbankreative.vercel.app/,
+    "demoUrl": "https://thee-urbankreative.vercel.app/",
     "stars": 1,
     "isPrivate": false
   },

@@ -16,7 +16,7 @@
     "description": "A language learning app inspired by Duolingo, built to teach and preserve Kenyan languages in an engaging, interactive way.",
     "tech": ["Python", "TS", "React", "PostgreSQL", "SQLite3"],
     "image": "images/KenyaLanguages.png",
-    "githubUrl": "https://github.com/wabukowabuko/ke-lingo-quest,
+    "githubUrl": "https://github.com/wabukowabuko/ke-lingo-quest",
     "demoUrl": "https://ke-lingo-quest.vercel.app/",
     "stars": 1,
     "isPrivate": false

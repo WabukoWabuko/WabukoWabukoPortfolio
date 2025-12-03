@@ -17,7 +17,7 @@ function About() {
       <section className="text-center py-5">
         <h1 className="display-4 fw-bold">About Basil Wabuko</h1>
         <p className="lead">
-          A Computer Scientist and Full-Stack Developer with 2+ years of hands-on experience crafting scalable, impactful software solutions.
+          Computer Scientist and Software Engineer with over 2 years of experience building scalable full-stack applications, data-driven systems, and production-ready software solutions.
         </p>
       </section>
 
@@ -27,10 +27,19 @@ function About() {
         <div className="row justify-content-center">
           <div className="col-md-8">
             <p className="lead text-center">
-              I graduated with a Bachelor of Science in Computer Science from Kisii University in 2024, where I built a strong foundation in software engineering, modern web development, and data science. During my internship at the Kenya Civil Aviation Authority in 2022, I developed a machine-learning–powered diagnostic model for early breast cancer detection, improving clinical decision-making processes.
+              I hold a Bachelor of Science in Computer Science from Kisii University, where I developed a strong foundation in software engineering, data science, and problem-solving. My professional experience spans both public-sector and enterprise environments, with a focus on full-stack development, data analytics, and cloud-native engineering.
             </p>
+
             <p className="text-center">
-              Since 2022, I’ve worked as a freelance Full-Stack Developer, delivering production-ready solutions across different sectors. One of my highlight projects is a niche e-commerce platform tailored for urban artists—an application that showcases my ability to design, architect, and deploy scalable systems that solve real-world problems.
+              I currently serve as a Software Engineer at the Export Processing Zones Authority (EPZA), where I build and maintain full-stack applications that support operations, compliance, and investor services. My work includes developing RESTful APIs, optimizing databases, automating workflows, and implementing CI/CD pipelines and containerized deployments.
+            </p>
+
+            <p className="text-center">
+              Previously, I worked at the Kenya Civil Aviation Authority (KCAA), contributing to mission-critical systems that support aviation safety, licensing, and digital document management. I built dashboards for real-time analytics, streamlined legacy systems, and supported secure integrations for cloud modernization initiatives.
+            </p>
+
+            <p className="text-center">
+              My earlier internship periods at KCAA gave me hands-on experience in debugging, testing, system documentation, API documentation, and UI/UX improvements—reinforcing the foundation that shaped my professional trajectory.
             </p>
           </div>
         </div>
@@ -42,7 +51,7 @@ function About() {
         <div className="row justify-content-center">
           <div className="col-md-8">
             <p className="lead text-center">
-              I’m based in Nairobi, Kenya, and fluent in both English and Swahili—skills that help me collaborate seamlessly in diverse, fast-paced environments. I’m driven by problem-solving, innovation, and the pursuit of meaningful digital experiences. Beyond development, I’m inspired by the urban art scene, which directly influenced my work in building dedicated platforms for local creatives.
+              I’m based in Nairobi, Kenya, and fluent in English. I thrive in collaborative and fast-paced environments, especially those where problem-solving, continuous learning, and meaningful innovation take center stage. Outside of engineering, I enjoy exploring urban art and community-driven tech initiatives—interests that continue to influence the kind of software solutions I build.
             </p>
           </div>
         </div>
@@ -55,16 +64,23 @@ function About() {
           <div className="col-md-8">
             <ul className="list-unstyled">
               <li className="mb-4">
+                <h5 className="fw-bold">2025 – Present: Software Engineer, Export Processing Zones Authority (EPZA)</h5>
+                <p>Building full-stack applications for operations, compliance, and investor services. Implementing CI/CD pipelines, workflow automations, and database optimizations.</p>
+              </li>
+
+              <li className="mb-4">
+                <h5 className="fw-bold">2024 – 2025: Software Engineer, Kenya Civil Aviation Authority (KCAA)</h5>
+                <p>Developed aviation systems, real-time dashboards, and secure integrations while supporting cloud modernization and improving legacy applications.</p>
+              </li>
+
+              <li className="mb-4">
+                <h5 className="fw-bold">2022 – 2024: Software Engineering Intern, KCAA</h5>
+                <p>Supported software development, testing, debugging, UI/UX improvements, and system/API documentation across multiple internship cycles.</p>
+              </li>
+
+              <li className="mb-4">
                 <h5 className="fw-bold">2024: Graduated from Kisii University</h5>
-                <p>Earned a BSc. in Computer Science, laying the groundwork for strong analytical, engineering, and data-driven problem-solving skills.</p>
-              </li>
-              <li className="mb-4">
-                <h5 className="fw-bold">2022: Internship at Kenya Civil Aviation Authority</h5>
-                <p>Built a machine-learning diagnostic system for breast cancer detection, contributing to improved healthcare decision-making.</p>
-              </li>
-              <li className="mb-4">
-                <h5 className="fw-bold">2022 – Present: Freelance Full-Stack Developer</h5>
-                <p>Designed and developed a niche e-commerce platform for urban artists and delivered multiple client-focused software solutions—cementing my 2+ years of practical, real-world experience.</p>
+                <p>Earned a BSc. in Computer Science with strong grounding in software engineering, data science, and machine learning.</p>
               </li>
             </ul>
           </div>
@@ -74,7 +90,7 @@ function About() {
       {/* Call-to-Action */}
       <section className="py-5 text-center">
         <h3>Want to Learn More?</h3>
-        <p>Explore my work, review my skill set, or reach out to collaborate on your next project.</p>
+        <p>Explore my projects, review my technical skills, or reach out to collaborate.</p>
         <div className="d-flex gap-3 justify-content-center">
           <Link to="/projects" className="btn btn-primary btn-lg">
             View Projects

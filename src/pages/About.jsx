@@ -79,7 +79,7 @@ function About() {
               </li>
 
               <li className="mb-4">
-                <h5 className="fw-bold">2024: Graduated from Kisii University</h5>
+                <h5 className="fw-bold">Graduated from Kisii University</h5>
                 <p>Earned a BSc. in Computer Science with strong grounding in software engineering, data science, and machine learning.</p>
               </li>
             </ul>

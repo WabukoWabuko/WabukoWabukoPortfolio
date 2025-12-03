@@ -16,7 +16,7 @@ function Home() {
       {/* Hero Section */}
       <div className="row align-items-center">
         <div className="col-lg-6 mb-4 mb-lg-0">
-          <h1 className="display-4 fw-bold">Hi, I’m Basil Wabuko</h1>
+          <h1 className="display-4 fw-bold">Hello, I’m Basil Wabuko</h1>
           <p className="lead">
             I’m a Computer Scientist and Full-Stack Software Engineer with 2+ years of professional experience delivering scalable, production-ready web applications and data-driven solutions. My expertise spans full-stack development, cloud-native systems, data science, and DevOps practices, allowing me to transform complex challenges into efficient, reliable, and user-centered software.
           </p>

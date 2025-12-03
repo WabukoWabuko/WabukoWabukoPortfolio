@@ -16,9 +16,9 @@ function Home() {
       {/* Hero Section */}
       <div className="row align-items-center">
         <div className="col-lg-6 mb-4 mb-lg-0">
-          <h1 className="display-4 fw-bold">Welcome to Wabuko's Portfolio</h1>
+          <h1 className="display-4 fw-bold">Hi, I’m Basil Wabuko</h1>
           <p className="lead">
-            Hi, I’m Basil Wabuko—a passionate, results-driven Full-Stack Developer and Computer Scientist with 2+ years of hands-on experience designing, developing, and optimizing scalable, modern web applications. I specialize in turning complex challenges into clean, efficient, and user-centered software solutions. Driven by innovation and real-world impact, I thrive on building fast, reliable systems that make a meaningful difference.
+            I’m a Computer Scientist and Full-Stack Software Engineer with 2+ years of professional experience delivering scalable, production-ready web applications and data-driven solutions. My expertise spans full-stack development, cloud-native systems, data science, and DevOps practices, allowing me to transform complex challenges into efficient, reliable, and user-centered software.
           </p>
           <div className="d-flex gap-3">
             <Link to="/projects" className="btn btn-primary btn-lg">
@@ -32,7 +32,7 @@ function Home() {
             </Link>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 text-center">
           <img
             src="images/headshot3.png"
             alt="Headshot of Basil Wabuko"
@@ -42,26 +42,34 @@ function Home() {
         </div>
       </div>
 
-      {/* Teaser Section */}
+      {/* Teaser / Why Work With Me Section */}
       <section className="py-5">
         <h2 className="text-center mb-4">Why Work With Me?</h2>
         <div className="row justify-content-center">
           <div className="col-md-8">
             <p className="lead text-center">
-               With a strong foundation in full-stack development and a knack for problem-solving, I’ve built impactful solutions like an e-commerce platform for urban artists. My skills span web technologies, data science, and cloud-native development.
+              I bring a unique blend of technical expertise and practical experience, having developed impactful solutions such as a niche e-commerce platform for urban artists. My skill set covers modern web technologies, data analysis, machine learning, cloud deployment, and CI/CD pipelines, enabling me to deliver solutions that solve real-world problems efficiently.
             </p>
             <p className="text-center">
-              Want to see more? Check out my skills or explore other sections!
+              Whether it’s building scalable systems, optimizing workflows, or creating intuitive user experiences, I focus on creating software that drives measurable impact.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Call-to-Action */}
+      {/* Call-to-Action Section */}
       <section className="py-5 text-center">
+        <h3>Explore My Work</h3>
+        <p>Check out my skills, projects, or get in touch to collaborate on your next project!</p>
         <div className="d-flex gap-3 justify-content-center">
           <Link to="/skills" className="btn btn-outline-primary btn-lg">
             View Skills
+          </Link>
+          <Link to="/projects" className="btn btn-primary btn-lg">
+            View Projects
+          </Link>
+          <Link to="/contact" className="btn btn-success btn-lg">
+            Contact Me
           </Link>
         </div>
       </section>

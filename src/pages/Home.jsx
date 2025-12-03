@@ -48,7 +48,7 @@ function Home() {
         <div className="row justify-content-center">
           <div className="col-md-8">
             <p className="lead text-center">
-              With a strong foundation in full-stack development and a knack for problem-solving, I’ve built impactful solutions like an e-commerce platform for urban artists. My skills span web technologies, data science, and cloud-native development.
+               With a strong foundation in full-stack development and a knack for problem-solving, I’ve built impactful solutions like an e-commerce platform for urban artists. My skills span web technologies, data science, and cloud-native development.
             </p>
             <p className="text-center">
               Want to see more? Check out my skills or explore other sections!

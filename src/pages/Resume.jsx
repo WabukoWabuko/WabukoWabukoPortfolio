@@ -11,7 +11,7 @@ import { useContext } from 'react';
          : 'https://WabukoWabuko.github.io/WabukoWabukoPortfolio';
 
        // Construct absolute URL for the PDF
-       const pdfUrl = `${baseUrl}/WabukoWabukoPortfolio/resume.pdf`;
+       const pdfUrl = `${baseUrl}/WabukoWabukoPortfolio/BasilWabukoResume.pdf`; //This is the latest resume with the name BasilWabukoResume.pdf
 
        const handlePrint = () => {
          // Open the PDF in a new window

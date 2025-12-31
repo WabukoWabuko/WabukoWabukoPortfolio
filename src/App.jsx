@@ -13,7 +13,7 @@ import { ThemeProvider } from './context/ThemeContext';
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter basename="/WabukoWabukoPortfolio">
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
